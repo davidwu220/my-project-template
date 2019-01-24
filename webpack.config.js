@@ -8,9 +8,14 @@ const config = {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js'
   },
+  // Configure how modules are resolved. 
+  // resolve -> extensions: Automatically resolve certain extensions.
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
+  // webpack supports modules written in a variety of languages and preprocessors,
+  // via loaders. Loaders describe to webpack how to process non-JavaScript modules 
+  // and include these dependencies into your bundles.
   module: {
     rules: [
       {
